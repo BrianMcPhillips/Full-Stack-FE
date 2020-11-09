@@ -18,7 +18,7 @@ const StateList = () => {
   ));
 
   return (
-    <ul>
+    <ul data-testid="states">
       {stateElements}
     </ul>
   );
