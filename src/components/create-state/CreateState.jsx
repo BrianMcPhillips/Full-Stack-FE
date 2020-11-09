@@ -30,11 +30,26 @@ const CreateState = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" name="state-name" value={stateName} 
+      <label htmlFor="state-name">State Name</label>
+      <input 
+        id="state-name" 
+        type="text" 
+        name="state-name" 
+        value={stateName} 
         onChange={handleChange}/> 
-      <input type="number" name="electoral-votes" value={electoralVotes}
+      <label htmlFor="state-electoral-votes">State Electoral Votes</label>
+      <input 
+        id="state-electoral-votes" 
+        type="number" 
+        name="electoral-votes" 
+        value={electoralVotes}
         onChange={handleChange}/>
-      <input type="text" name="winner" value={winner}
+      <label htmlFor="state-winner">State Winner</label>
+      <input 
+        id="state-winner"
+        type="text" 
+        name="winner" 
+        value={winner}
         onChange={handleChange}/>
       <button>Create State</button>
     </form>
